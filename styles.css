@@ -94,14 +94,27 @@ h1 span {
 	margin-bottom: 8px;
 }
 
-.service-links {
+.team {
+	margin: 22px auto 0;
+}
+
+.team h2 {
+	margin: 0 0 8px;
+	font-size: 13px;
+	font-weight: 800;
+	line-height: 1.4;
+}
+
+.service-links,
+.team-members {
 	display: flex;
 	justify-content: center;
 	gap: 12px 32px;
 	flex-wrap: wrap;
 }
 
-.service-links a {
+.service-links a,
+.team-member {
 	display: inline-flex;
 	min-height: 38px;
 	align-items: center;
@@ -118,7 +131,8 @@ h1 span {
 	transition: background-color 160ms ease, transform 160ms ease;
 }
 
-.service-links a:hover {
+.service-links a:hover,
+.team-member:hover {
 	background: rgba(242, 253, 253, 0.66);
 	transform: translateY(-2px);
 }
@@ -169,7 +183,19 @@ h1 span {
 		gap: 11px;
 	}
 
-	.service-links a {
+	.team {
+		margin-top: 26px;
+	}
+
+	.team-members {
+		max-width: 360px;
+		margin-right: auto;
+		margin-left: auto;
+		gap: 11px;
+	}
+
+	.service-links a,
+	.team-member {
 		min-height: 42px;
 		flex: 1 1 145px;
 		padding: 0 10px;
